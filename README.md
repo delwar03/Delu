@@ -23,7 +23,7 @@ To get started with the Bouncing Ball Game, follow these simple steps:
 
     - Click `More info` and then `Run anyway` button.
 
-    - And then install it like anyother application.
+    - And then install it like anyother applications.
 
     - Guess what you're done!!
 
