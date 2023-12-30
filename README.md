@@ -37,7 +37,7 @@ To get started with the Bouncing Ball Game, follow these simple steps:
 
 2. Open the `main.cpp` file in your **VS Code**.
 
-3. Click `CTRL+F2` in your **VS Code**. 
+3. Click `CTRL+F5` in your **VS Code**. 
 
 4. Play and Enjoy!!
 
