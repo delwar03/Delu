@@ -19,6 +19,8 @@ To get started with the Bouncing Ball Game, follow these simple steps:
 
     - Then click on the `No thanks, just take me to the downloads` button, your download process will be started.
 
+    - Run the exe file.
+
     - Click `More info` and then `Run anyway` button.
 
     - And then install it like anyother application.
