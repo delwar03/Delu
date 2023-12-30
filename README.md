@@ -35,9 +35,9 @@ To get started with the Bouncing Ball Game, follow these simple steps:
     git clone https://github.com/delwar03/Delu.git
     ```
 
-2. Open the `main.cpp` file in your VS Code.
+2. Open the `main.cpp` file in your **VS Code**.
 
-3. Click `CTRL+F2` in your VS Code 
+3. Click `CTRL+F2` in your **VS Code**. 
 
 4. Play and Enjoy!!
 
