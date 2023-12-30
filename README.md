@@ -15,7 +15,7 @@ To get started with the Bouncing Ball Game, follow these simple steps:
 1. ### Download and Install Raylib library:
     - Click on the following **[link](https://www.raylib.com/)** which will being you into the raylib website.
 
-    - Click on the download button.
+    - Click on the `download` button.
 
     - Then click on the `No thanks, just take me to the downloads` button, your download process will be started.
 
