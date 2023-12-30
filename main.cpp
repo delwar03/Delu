@@ -11,6 +11,9 @@ Color Yellow = Color{243, 213, 91, 255};
 int player_score = 0;
 int bot_score = 0;
 
+const char* winner = NULL;
+char name[20];
+
 class Ball {
 public:
     float x, y;
@@ -31,11 +34,13 @@ public:
         if(x + radius >= GetScreenWidth()) // bot will get some marks
         {
             bot_score++;
+            winner = "BOT wins";
             ResetBall();
         }
         if(x - radius <= 0) // player will get some marks
         {
             player_score++;
+            winner = "Player wins";
             ResetBall();
         }
         
@@ -104,6 +109,12 @@ int main () {
 
 
     cout << "Game started\n" << endl;
+    cout << "Enter your name: ";
+    scanf("%s", name);
+    for(int i = 0; name[i] != '\0'; i++) {
+        name[i] = toupper(name[i]);
+    }
+
     
     const int screen_width = 1280;
     const int screen_height = 800;
@@ -137,9 +148,15 @@ int main () {
 
 
             // Updating
-            ball.Update();
-            player.Update();
-            bot.Update(ball.y);
+            if(!winner) {
+                ball.Update();
+                player.Update();
+                bot.Update(ball.y);
+            }
+
+            if(winner && IsKeyPressed(KEY_SPACE)) {
+                winner = NULL;
+            }
 
 
             // Check if collision occurs
@@ -161,8 +178,19 @@ int main () {
             ball.Draw();
             bot.Draw();
             player.Draw();
-            DrawText(TextFormat("%i", bot_score), screen_width / 4 - 20, 20, 80, WHITE);
-            DrawText(TextFormat("%i", player_score), 3 * screen_width / 4 - 20, 20, 80, WHITE);
+            DrawText("BOT", 40, 10, 80, WHITE);
+            DrawText(TextFormat("%i", bot_score), screen_width / 2 - 150, 20, 80, WHITE);
+            DrawText(name, screen_width / 2 + 40, 10, 80, WHITE);
+            DrawText(TextFormat("%i", player_score), screen_width - 150, 20, 80, WHITE);
+            if(winner) {
+                int winner_width = MeasureText(winner, 120);
+                char* StartAgain = "Press space key to start again or press Esc to exit...";
+                int StartAgain_width = MeasureText(StartAgain, 25);
+
+                DrawText(winner, screen_width / 2 - winner_width / 2, screen_height / 2 - 60, 120, YELLOW);
+                DrawText(StartAgain, screen_width / 2 - StartAgain_width / 2, screen_height / 2 + 120, 25, BLACK);
+                // winner = NULL;
+            }
 
 
         EndDrawing();
