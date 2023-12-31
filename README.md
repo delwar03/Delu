@@ -13,13 +13,13 @@
 To get started with the Bouncing Ball Game, follow these simple steps:
 
 1. ### Download and Install Raylib library:
-    - Click on the following **[link](https://www.raylib.com/)** which will being you into the raylib website.
+    - Click on the following **[link](https://www.raylib.com/)**  which will bring you to the Raylib website.
 
     - Click on the `download` button.
 
-    - Then click on the `No thanks, just take me to the downloads` button, your download process will be started.
+    - Then click on the `No thanks, just take me to the downloads` button and your downloading process will be started.
 
-    - Run the exe file.
+    - Run the .exe file.
 
     - Click `More info` and then `Run anyway` button.
 
@@ -37,7 +37,7 @@ To get started with the Bouncing Ball Game, follow these simple steps:
 
 2. Open the `main.cpp` file in your **VS Code**.
 
-3. Click `CTRL+F5` in your **VS Code**. 
+3. Click `CTRL+F5` to run the program in your **VS Code**. 
 
 4. Play and Enjoy!!
 
